@@ -1,0 +1,61 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-Black.otf",
+      "sha1": "7a8114a81b152c485b0d59540940291159a6517b"
+    },
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-BlackItalic.otf",
+      "sha1": "ef41e430c2adf12d7868d17d30573492c8e77bd0"
+    },
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-Bold.otf",
+      "sha1": "a2cfef660dc0050abdd4764be7964088ce110cb6"
+    },
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-BoldItalic.otf",
+      "sha1": "3a43462a3a36ce4e644a82922e0399d5accfd049"
+    },
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-ExtraBold.otf",
+      "sha1": "384b8ff43ce41fcc2d52990761a8edbe0ee2c1e5"
+    },
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-ExtraBoldItalic.otf",
+      "sha1": "2b52b64017d8e7b5780d66212c1db7a27a23c002"
+    },
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-Light.otf",
+      "sha1": "35bd9ef1c1835377b6cba06b4c81b1265487425f"
+    },
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-LightItalic.otf",
+      "sha1": "99645a636ec78268171409ab3c3d86df16a2cdd0"
+    },
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-Medium.otf",
+      "sha1": "b80c3595ea5e03ffa925ac0ed1e5331a56fc8d55"
+    },
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-MediumItalic.otf",
+      "sha1": "5ebec56296b5cfcbf8d782c7ad18cdfcff14b6ba"
+    },
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-Regular.otf",
+      "sha1": "fe653557c0b7f3cf024ab836d04b4f1e5e94dfc7"
+    },
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-RegularItalic.otf",
+      "sha1": "001a23a7e1bffb7da033a7be1cb9950a3498d4df"
+    },
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-Thin.otf",
+      "sha1": "f793ac593362057a8231c8b90347c510eb4316f0"
+    },
+    {
+      "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-ThinItalic.otf",
+      "sha1": "975619fc7f89fabcbb142826be25574b7c5996ca"
+    }
+  ]
+}

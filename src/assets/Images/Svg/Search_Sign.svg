@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 158 158" style="enable-background:new 0 0 158 158;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#A9A0FF;}
+	.st1{fill:#FFFFFF;}
+	.st2{clip-path:url(#SVGID_00000180339607197430028980000014977413181437334150_);}
+	.st3{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+	.st4{clip-path:url(#SVGID_00000075847291654521873300000014205714254200195766_);}
+	.st5{fill:none;}
+</style>
+<circle id="Ellipse_73" class="st0" cx="79" cy="79" r="79"/>
+<g id="Group_160" transform="translate(16 6.784)">
+	<rect id="Rectangle_289" x="1.6" y="49.4" class="st1" width="122.7" height="80.4"/>
+	<g id="Group_161">
+		<g>
+			<defs>
+				<rect id="SVGID_1_" y="0.2" width="126" height="131"/>
+			</defs>
+			<clipPath id="SVGID_00000043436048179208604680000012944726908906286727_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g id="Group_160-2" style="clip-path:url(#SVGID_00000043436048179208604680000012944726908906286727_);">
+				<rect id="Rectangle_290" x="1.6" y="49.4" class="st3" width="122.7" height="80.4"/>
+			</g>
+		</g>
+	</g>
+	<path id="Path_464" class="st3" d="M22.3,48.3L61.4,9.2l39.1,40.2"/>
+	<g id="Group_163">
+		<g>
+			<defs>
+				<rect id="SVGID_00000109751781166408876890000007251723751730818953_" y="0.2" width="126" height="131"/>
+			</defs>
+			<clipPath id="SVGID_00000015342561243680773300000015372804926918513582_">
+				<use xlink:href="#SVGID_00000109751781166408876890000007251723751730818953_"  style="overflow:visible;"/>
+			</clipPath>
+			<g id="Group_162" style="clip-path:url(#SVGID_00000015342561243680773300000015372804926918513582_);">
+				<path id="Path_465" class="st1" d="M50.5,6.5c0,2.7-1.2,4.9-2.7,4.9s-2.7-2.2-2.7-4.9s1.2-4.9,2.7-4.9S50.5,3.8,50.5,6.5"/>
+				<ellipse id="Ellipse_78" class="st3" cx="47.8" cy="6.5" rx="2.7" ry="4.9"/>
+				<line id="Line_52" class="st5" x1="61.4" y1="9.2" x2="50.2" y2="7.4"/>
+				<line id="Line_53" class="st3" x1="61.4" y1="9.2" x2="50.2" y2="7.4"/>
+				<path id="Path_466" d="M53.8,90.2c0,3.9-3.2,7.1-7.1,7.1c-3.9,0-7.1-3.2-7.1-7.1c0-3.9,3.2-7.1,7.1-7.1l0,0
+					C50.6,83.1,53.8,86.3,53.8,90.2"/>
+				<path id="Path_467" d="M83.6,90.7c0,3.9-3.2,7.1-7.1,7.1c-3.9,0-7.1-3.2-7.1-7.1c0-3.9,3.2-7.1,7.1-7.1
+					C80.5,83.6,83.6,86.8,83.6,90.7"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
