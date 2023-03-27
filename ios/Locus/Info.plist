@@ -67,6 +67,10 @@
 		<string>Magenos-RegularItalic.otf</string>
 		<string>Magenos-Thin.otf</string>
 		<string>Magenos-ThinItalic.otf</string>
+		<string>ARIBL0.ttf</string>
+		<string>ArialTh.ttf</string>
+		<string>Arialn.ttf</string>
+		<string>arial.ttf</string>
 	</array>
 </dict>
 </plist>

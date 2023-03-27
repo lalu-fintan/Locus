@@ -2,6 +2,30 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "src/assets/fonts/ARIBL0.ttf",
+      "sha1": "0a964ad1406c869ea0a6708cf6379a8becad1300"
+    },
+    {
+      "path": "src/assets/fonts/ArialTh.ttf",
+      "sha1": "bed88479281250d0a67be79b22a06b3ee285538b"
+    },
+    {
+      "path": "src/assets/fonts/Arialn.ttf",
+      "sha1": "64f6c2438da82137c60843a966c67c0378d01c64"
+    },
+    {
+      "path": "src/assets/fonts/GEO_AI__.TTF",
+      "sha1": "8fae47b97eb5ddc11cad7e1adf0f88f3523570e4"
+    },
+    {
+      "path": "src/assets/fonts/G_ari_bd.TTF",
+      "sha1": "c3f74dcaf274e04836c118348bb625e4d400e795"
+    },
+    {
+      "path": "src/assets/fonts/G_ari_i.TTF",
+      "sha1": "5f769ee0727984884d7addde3648b66427aea712"
+    },
+    {
       "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-Black.otf",
       "sha1": "7a8114a81b152c485b0d59540940291159a6517b"
     },
@@ -56,6 +80,10 @@
     {
       "path": "src/assets/fonts/Magenos/Magenos Font Family/Magenos-ThinItalic.otf",
       "sha1": "975619fc7f89fabcbb142826be25574b7c5996ca"
+    },
+    {
+      "path": "src/assets/fonts/arial.ttf",
+      "sha1": "94ed380f23abc185b81be96b94001368e79164ae"
     }
   ]
 }

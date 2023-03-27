@@ -28,6 +28,13 @@
 		9D58B290BC554EEDACBB3BF6 /* Magenos-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C75AD12B57941D282CE70CF /* Magenos-RegularItalic.otf */; };
 		479E81B5A1A646E38F84D8D6 /* Magenos-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A3F3D35BA72D4C3697B802C9 /* Magenos-Thin.otf */; };
 		50AB897A58844B3188E4AB94 /* Magenos-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3BBA155E5B3F4B67B8F37131 /* Magenos-ThinItalic.otf */; };
+		DFA070000441445CB4E294D8 /* ARIBL0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DF299D24E674F07A827FBA1 /* ARIBL0.ttf */; };
+		C6D29B0E75654BF4AFD80DF8 /* ArialTh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A7B0631594E06AE20C14E /* ArialTh.ttf */; };
+		EE3A8861A1764B8AB239D6AD /* Arialn.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 402E74E3B8A04FE4870286AC /* Arialn.ttf */; };
+		48F10142BDE9404BA2657926 /* arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C3552F3393F492D93F78362 /* arial.ttf */; };
+		0C3BD5D6DDD5421F857D3637 /* GEO_AI__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 7C0DA8EEB6E149D1859860D7 /* GEO_AI__.TTF */; };
+		EA456E32891140CFA454AF59 /* G_ari_bd.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 6CDE4EF7064C44D2AC33DE22 /* G_ari_bd.TTF */; };
+		7CF58DB4EB2C4E8DB1CDC0C6 /* G_ari_i.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E8AA2D93662D490E9D18E268 /* G_ari_i.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +79,13 @@
 		3C75AD12B57941D282CE70CF /* Magenos-RegularItalic.otf */ = {isa = PBXFileReference; name = "Magenos-RegularItalic.otf"; path = "../src/assets/fonts/Magenos/Magenos Font Family/Magenos-RegularItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		A3F3D35BA72D4C3697B802C9 /* Magenos-Thin.otf */ = {isa = PBXFileReference; name = "Magenos-Thin.otf"; path = "../src/assets/fonts/Magenos/Magenos Font Family/Magenos-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		3BBA155E5B3F4B67B8F37131 /* Magenos-ThinItalic.otf */ = {isa = PBXFileReference; name = "Magenos-ThinItalic.otf"; path = "../src/assets/fonts/Magenos/Magenos Font Family/Magenos-ThinItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8DF299D24E674F07A827FBA1 /* ARIBL0.ttf */ = {isa = PBXFileReference; name = "ARIBL0.ttf"; path = "../src/assets/fonts/ARIBL0.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C5A7B0631594E06AE20C14E /* ArialTh.ttf */ = {isa = PBXFileReference; name = "ArialTh.ttf"; path = "../src/assets/fonts/ArialTh.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		402E74E3B8A04FE4870286AC /* Arialn.ttf */ = {isa = PBXFileReference; name = "Arialn.ttf"; path = "../src/assets/fonts/Arialn.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C3552F3393F492D93F78362 /* arial.ttf */ = {isa = PBXFileReference; name = "arial.ttf"; path = "../src/assets/fonts/arial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7C0DA8EEB6E149D1859860D7 /* GEO_AI__.TTF */ = {isa = PBXFileReference; name = "GEO_AI__.TTF"; path = "../src/assets/fonts/GEO_AI__.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6CDE4EF7064C44D2AC33DE22 /* G_ari_bd.TTF */ = {isa = PBXFileReference; name = "G_ari_bd.TTF"; path = "../src/assets/fonts/G_ari_bd.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E8AA2D93662D490E9D18E268 /* G_ari_i.TTF */ = {isa = PBXFileReference; name = "G_ari_i.TTF"; path = "../src/assets/fonts/G_ari_i.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +208,13 @@
 				3C75AD12B57941D282CE70CF /* Magenos-RegularItalic.otf */,
 				A3F3D35BA72D4C3697B802C9 /* Magenos-Thin.otf */,
 				3BBA155E5B3F4B67B8F37131 /* Magenos-ThinItalic.otf */,
+				8DF299D24E674F07A827FBA1 /* ARIBL0.ttf */,
+				6C5A7B0631594E06AE20C14E /* ArialTh.ttf */,
+				402E74E3B8A04FE4870286AC /* Arialn.ttf */,
+				6C3552F3393F492D93F78362 /* arial.ttf */,
+				7C0DA8EEB6E149D1859860D7 /* GEO_AI__.TTF */,
+				6CDE4EF7064C44D2AC33DE22 /* G_ari_bd.TTF */,
+				E8AA2D93662D490E9D18E268 /* G_ari_i.TTF */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -309,6 +330,13 @@
 				9D58B290BC554EEDACBB3BF6 /* Magenos-RegularItalic.otf in Resources */,
 				479E81B5A1A646E38F84D8D6 /* Magenos-Thin.otf in Resources */,
 				50AB897A58844B3188E4AB94 /* Magenos-ThinItalic.otf in Resources */,
+				DFA070000441445CB4E294D8 /* ARIBL0.ttf in Resources */,
+				C6D29B0E75654BF4AFD80DF8 /* ArialTh.ttf in Resources */,
+				EE3A8861A1764B8AB239D6AD /* Arialn.ttf in Resources */,
+				48F10142BDE9404BA2657926 /* arial.ttf in Resources */,
+				0C3BD5D6DDD5421F857D3637 /* GEO_AI__.TTF in Resources */,
+				EA456E32891140CFA454AF59 /* G_ari_bd.TTF in Resources */,
+				7CF58DB4EB2C4E8DB1CDC0C6 /* G_ari_i.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
