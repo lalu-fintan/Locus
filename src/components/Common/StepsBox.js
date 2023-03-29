@@ -2,7 +2,7 @@ import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import QuestionMark from '../../assets/Images/Svg/QuestionMark.svg';
 
-const StepsBox = ({Steps, title, navigation, current}) => {
+const StepsBox = ({Steps, title, navigation, current, help}) => {
   return (
     <TouchableOpacity
       style={[styles.boxContainer, !current && {opacity: 0.5}]}
@@ -12,7 +12,7 @@ const StepsBox = ({Steps, title, navigation, current}) => {
         <Text style={styles.topTxt}>{Steps}</Text>
         <Text style={styles.title}>{title}</Text>
       </View>
-      <QuestionMark width={50} height={25} style={styles.icon} />
+      {help && <QuestionMark width={50} height={25} style={styles.icon} />}
     </TouchableOpacity>
   );
 };

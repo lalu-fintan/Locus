@@ -32,7 +32,7 @@ const SettingsScreen = () => {
               <Text style={styles.profileName}>John Doe</Text>
               <View style={{flexDirection: 'row'}}>
                 <View style={styles.topIcon}>
-                  <Star name="md-star" size={12} color={'#A9A0FF'} />
+                  <Star name="md-star" size={14} color={'#A9A0FF'} />
                   <Text
                     style={[styles.iconTxt, {color: '#A9A0FF', marginTop: 3}]}>
                     {' '}
@@ -42,7 +42,7 @@ const SettingsScreen = () => {
                 <View style={[styles.topIcon, {marginLeft: 10, marginTop: 3}]}>
                   <Location
                     name="ios-location-sharp"
-                    size={12}
+                    size={14}
                     color={'#8B8A8A'}
                   />
                   <Text style={styles.iconTxt}> M25 3AY</Text>

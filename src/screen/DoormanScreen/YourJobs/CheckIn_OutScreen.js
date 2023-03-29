@@ -80,10 +80,10 @@ const styles = StyleSheet.create({
   },
   bottomContainer: {
     backgroundColor: '#C9C9C9',
-    height: 90,
+    height: 100,
     justifyContent: 'center',
     paddingHorizontal: 80,
-    marginTop: 30,
+    marginTop: 50,
   },
   timeTxt: {
     fontFamily: 'Magenos-Bold',

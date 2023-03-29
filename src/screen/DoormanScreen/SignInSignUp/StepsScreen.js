@@ -17,6 +17,7 @@ const StepsScreen = ({navigation}) => {
           <StepsBox
             Steps="Step1"
             title="Right to work"
+            help
             navigation={() => {
               navigation.navigate('upload');
               setCurrent(true);
@@ -25,6 +26,7 @@ const StepsScreen = ({navigation}) => {
           <StepsBox
             Steps="Step2"
             title="Get paid"
+            help
             navigation={() => {
               navigation.navigate('paid');
               setCurrent(true);
@@ -33,6 +35,7 @@ const StepsScreen = ({navigation}) => {
           <StepsBox
             Steps="Step3"
             title="Background checks"
+            help
             navigation={() => {
               navigation.navigate('background');
               setCurrent(true);

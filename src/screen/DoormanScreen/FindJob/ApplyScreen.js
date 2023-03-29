@@ -47,9 +47,9 @@ const ApplyScreen = ({navigation, route}) => {
                   <Text style={styles.dateTxt}>{route.params?.EventTime}</Text>
                 </View>
                 <View style={styles.time}>
-                  <TimeIcon name="time" size={16} color={'#4FC762'} />
+                  <TimeIcon name="time" size={16} color={'#8B8A8A'} />
                   <Text style={styles.timeTxt}>
-                    From {route.params?.EventTime}
+                    From {route.params?.timeTo}
                   </Text>
                 </View>
               </View>
@@ -64,7 +64,7 @@ const ApplyScreen = ({navigation, route}) => {
                   color={'#8B8A8A'}
                 />
                 <Text style={styles.location}>{route.params?.location}</Text>
-                <Text style={styles.farKM}>({route.params?.distance})</Text>
+                <Text style={styles.farKM}> ({route.params?.distance})</Text>
               </View>
             </View>
             <View style={styles.descContainer}>
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
     paddingLeft: 6,
     fontFamily: 'Magenos-Medium',
     fontSize: 13,
-    color: '#4FC762',
+    color: '#8B8A8A',
   },
   description: {
     fontFamily: 'Magenos-Bold',

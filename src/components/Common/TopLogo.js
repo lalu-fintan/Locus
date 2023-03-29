@@ -39,7 +39,7 @@ export default TopLogo;
 
 const styles = StyleSheet.create({
   mainContainer: {
-    marginVertical: 10,
+    // marginVertical: 10,
     justifyContent: 'center',
   },
   // arrow: {
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   svgLogo: {
     alignItems: 'center',
     // position: 'relative',
-    margin: 15,
+    margin: 10,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },

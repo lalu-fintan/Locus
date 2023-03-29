@@ -8,6 +8,7 @@ export const EventDataList = [
     eventTime: 'Sat 15th Aug at 8pm',
     distance: '6 mi',
     remainingTime: '3 hr',
+    timeTo: ' 8pm to 11pm',
     Amount: '£150',
     status: 'active',
     description:
@@ -20,6 +21,7 @@ export const EventDataList = [
     uploadTime: '4 days ago',
     location: 'The Venue, Manchester',
     eventTime: 'Sat 15th Aug at 8pm',
+    timeTo: ' 8pm to 11pm',
     distance: '10 km',
     remainingTime: '7 hr',
     Amount: '£200',
@@ -36,6 +38,7 @@ export const EventDataList = [
     eventTime: 'Sat 15th Aug at 8pm',
     distance: '5 mi',
     remainingTime: '3 hr',
+    timeTo: ' 8pm to 11pm',
     Amount: '£100',
     status: 'Completed',
     description:
@@ -50,6 +53,7 @@ export const EventDataList = [
     eventTime: 'Sat 15th Aug at 8pm',
     distance: '2 mi',
     remainingTime: '3 hr',
+    timeTo: ' 8pm to 11pm',
     Amount: '£120',
     status: 'active',
     description:
@@ -64,6 +68,7 @@ export const EventDataList = [
     eventTime: 'Sat 15th Aug at 8pm',
     distance: '2 mi',
     remainingTime: '3 hr',
+    timeTo: ' 8pm to 11pm',
     Amount: '£180',
     status: 'Completed',
     description:
@@ -78,6 +83,7 @@ export const EventDataList = [
     eventTime: 'Sat 15th Aug at 8pm',
     distance: '2 mi',
     remainingTime: '3 hr',
+    timeTo: ' 8pm to 11pm',
     Amount: '£150',
     status: 'Completed',
     description:
@@ -92,6 +98,7 @@ export const EventDataList = [
     eventTime: 'Sat 15th Aug at 8pm',
     distance: '2 mi',
     remainingTime: '3 hr',
+    timeTo: ' 8pm to 11pm',
     Amount: '£130',
     status: 'active',
     description:

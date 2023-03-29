@@ -110,8 +110,8 @@ export default JobList;
 const styles = StyleSheet.create({
   boxGroup: {},
   contentBox: {
-    borderWidth: 0.5,
-    borderColor: '#8B8A8A',
+    borderWidth: 1,
+    borderColor: '#C9C9C9',
     borderRadius: 5,
     height: 115,
     marginBottom: 15,
@@ -137,6 +137,7 @@ const styles = StyleSheet.create({
     marginTop: 4,
     marginRight: 4,
     opacity: 0.8,
+    color: '#8B8A8A',
   },
 
   mainContent: {
@@ -165,7 +166,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginTop: 6,
     borderTopWidth: 0.5,
-    borderColor: '#8B8A8A',
+    borderTopColor: '#C9C9C9',
   },
 
   bottomcontent: {
@@ -192,7 +193,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingRight: 5,
     width: 88,
-    height: 29,
+    height: 27.5,
     borderBottomEndRadius: 5,
   },
 

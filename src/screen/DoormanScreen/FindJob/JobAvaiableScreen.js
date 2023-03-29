@@ -53,6 +53,7 @@ const JobAvaiableScreen = ({navigation}) => {
                     distance: item.distance,
                     description: item.description,
                     amount: item.Amount,
+                    timeTo: item.timeTo,
                   })
                 }
               />

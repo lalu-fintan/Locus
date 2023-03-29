@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
   bankDetailsTxt: {
     fontFamily: 'Magenos-Bold',
     fontSize: 19,
-    marginLeft: 25,
+    marginLeft: 20,
     marginTop: 10,
   },
   detailsContainer: {

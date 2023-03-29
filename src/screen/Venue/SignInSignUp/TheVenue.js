@@ -1,14 +1,38 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import TopLogo from '../../../components/Common/TopLogo';
+import TopBox from '../../../components/Common/TopBox';
+import InputField from '../../../components/Common/InputField';
+import Button from '../../../components/Common/Button';
+import Footer from '../../../components/Common/Footer';
 
-const TheVenue = () => {
+const TheVenue = ({navigation}) => {
   return (
-    <View>
-      <Text>TheVenue</Text>
-    </View>
+    <SafeAreaView>
+      <ScrollView>
+        <TopLogo navigation={() => navigation.goBack()} />
+        <TopBox lable={'The Venue'} />
+        <View style={styles.inputContainer}>
+          <InputField lable={'Venue Name'} placeholder={'Name'} />
+          <InputField lable={'Registration Number'} placeholder={'Number'} />
+          <InputField lable={'Email'} placeholder={'Email'} />
+          <InputField lable={'Phone Number'} placeholder={'+44'} />
+          <Button
+            lable={'Next'}
+            onPress={() => navigation.navigate('CreateAccount')}
+          />
+        </View>
+        <Footer navigation={() => navigation.navigate('login')} />
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
 export default TheVenue;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  inputContainer: {
+    marginVertical: 55,
+    marginHorizontal: 20,
+  },
+});

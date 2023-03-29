@@ -5,7 +5,7 @@ import FormScreen from '../../../screen/DoormanScreen/SignInSignUp/FormScreen';
 import LoginScreen from '../../../screen/DoormanScreen/SignInSignUp/LoginScreen';
 import StepsScreen from '../../../screen/DoormanScreen/SignInSignUp/StepsScreen';
 import UploadScreen from '../../../screen/DoormanScreen/SignInSignUp/UploadScreen';
-import PaidScreen from '../../../screen/DoormanScreen/SignInSignUp/UploadScreen';
+import PaidScreen from '../../../screen/DoormanScreen/SignInSignUp/PaidScreen';
 import BackgroundCheckScreen from '../../../screen/DoormanScreen/SignInSignUp/BackgroundCheckScreen';
 import FinalSignInScreen from '../../../screen/DoormanScreen/SignInSignUp/LastAccountScreen';
 
