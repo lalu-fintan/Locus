@@ -2,10 +2,6 @@ import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React, {useState} from 'react';
 
 const FilterButton = ({Option1, Option2, selectionMode, onSelcectSwitch}) => {
-  // const [onSelect1, setOnSelect1] = useState(0);
-  // const [onSelect2, setOnSelect2] = useState(1);
-  // console.log(onSelect1);
-  // console.log(onSelect2);
   const [getSelectionMode, setSelectionMode] = useState(selectionMode);
 
   const updateSwitchData = value => {

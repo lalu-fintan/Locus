@@ -1,6 +1,7 @@
 import {View, Text} from 'react-native';
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {getFocusedRouteNameFromRoute} from '@react-navigation/native';
 import PostJobs from './Venue_menu/PostJobs';
 import BoardIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import CalenderIcon from 'react-native-vector-icons/FontAwesome5';
@@ -29,28 +30,50 @@ const Venue_bottom = () => {
         name="venue_post"
         component={PostJobs}
         options={{
-          tabBarLabel: 'Found job',
-          tabBarLabelStyle: {fontSize: 10, fontFamily: 'arial'},
+          unmountOnBlur: true,
+          tabBarLabel: 'Post a job',
+          tabBarLabelStyle: {
+            fontSize: 10,
+            fontFamily: 'arial',
+            marginTop: 1,
+          },
           tabBarIcon: ({color}) => (
-            <BoardIcon name="bulletin-board" size={31} color={color} />
+            <BoardIcon
+              name="bulletin-board"
+              size={31}
+              color={color}
+              style={{marginTop: 2}}
+            />
           ),
         }}
       />
       <VenueBottomStack.Screen
         name="Venue_yourJobs"
         component={YourJobsNav}
-        options={{
+        options={({route}) => ({
+          unmountOnBlur: true,
           tabBarLabel: 'Your Jobs',
-          tabBarLabelStyle: {fontSize: 10, fontFamily: 'arial'},
+          tabBarStyle: {
+            display: getRouteName(route),
+            borderTopWidth: 1,
+            paddingBottom: 10,
+            height: 70,
+            paddingHorizontal: 20,
+          },
+          tabBarLabelStyle: {
+            fontSize: 10,
+            fontFamily: 'arial',
+          },
           tabBarIcon: ({color}) => (
             <CalenderIcon name="calendar-alt" size={27} color={color} />
           ),
-        }}
+        })}
       />
       <VenueBottomStack.Screen
         name="Venue_payments"
         component={PaymentNav}
         options={{
+          unmountOnBlur: true,
           tabBarLabel: 'Payments',
           tabBarLabelStyle: {fontSize: 10, fontFamily: 'arial'},
           tabBarIcon: ({color}) => (
@@ -62,6 +85,7 @@ const Venue_bottom = () => {
         name="Venue_Settings"
         component={SettingsNav}
         options={{
+          unmountOnBlur: true,
           tabBarLabel: 'Settings',
           tabBarLabelStyle: {fontSize: 10, fontFamily: 'arial'},
           tabBarIcon: ({color}) => (
@@ -71,6 +95,14 @@ const Venue_bottom = () => {
       />
     </VenueBottomStack.Navigator>
   );
+  function getRouteName(route) {
+    const routeName = getFocusedRouteNameFromRoute(route);
+    // console.log('route', routeName);
+    if (routeName == 'LeaveFeedback') {
+      return 'none';
+    }
+    return 'flex';
+  }
 };
 
 export default Venue_bottom;

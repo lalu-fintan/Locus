@@ -1,5 +1,6 @@
 import {StyleSheet, Text, TextInput, View} from 'react-native';
 import React, {useState} from 'react';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 const InputField = ({
   lable,
@@ -11,6 +12,7 @@ const InputField = ({
   PhoneNumber,
   onFoucus,
   required,
+  icon,
 }) => {
   const [isFocus, setInFoucs] = useState(false);
   return (
@@ -29,11 +31,12 @@ const InputField = ({
         )}
       </View>
       <View style={styles.FiledContainer}>
+        {icon && <Icon name={icon} size={16} color={'#CCCCCC'} />}
         <TextInput
           secureTextEntry={password}
           keyboardType={PhoneNumber && 'number-pad'}
           placeholder={placeholder}
-          placeholderTextColor="#808080"
+          placeholderTextColor={'#CCCCCC'}
           style={styles.input}
           value={value}
           onChangeText={text => onChangeText(text)}
@@ -65,6 +68,8 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     paddingLeft: 15,
     marginTop: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   lableContainer: {
     flexDirection: 'row',
@@ -73,6 +78,9 @@ const styles = StyleSheet.create({
     fontFamily: 'Magenos-Medium',
     color: '#000',
     fontSize: 16,
+    marginTop: 4,
+
+    width: '100%',
   },
   error: {
     color: 'red',

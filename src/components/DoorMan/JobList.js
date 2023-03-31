@@ -91,7 +91,7 @@ const JobList = ({
                           : status == 'Pending'
                           ? '#707070'
                           : '#FFF',
-                      // ? Compeleted && status =="Pending"?'#fff':'#707070'
+                      // ? Compeleted.status == 'Pending'&& '#fff'
                     },
                   ]}>
                   {status}
@@ -164,6 +164,7 @@ const styles = StyleSheet.create({
   mainBottom: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    // alignItems: 'center',
     marginTop: 6,
     borderTopWidth: 0.5,
     borderTopColor: '#C9C9C9',
@@ -185,7 +186,7 @@ const styles = StyleSheet.create({
   coin: {
     width: 10,
     height: 10,
-    marginRight: 1,
+    marginRight: 3,
   },
   bottomcontentLast: {
     flexDirection: 'row',
@@ -194,7 +195,7 @@ const styles = StyleSheet.create({
     paddingRight: 5,
     width: 88,
     height: 27.5,
-    borderBottomEndRadius: 5,
+    borderBottomEndRadius: 4,
   },
 
   insideContentLast: {

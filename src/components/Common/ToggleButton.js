@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import ToggleSwitch from 'toggle-switch-react-native';
 
 const ToggleButton = ({lable}) => {
-  const [isOn, setIsOn] = useState(true);
+  const [isOn, setIsOn] = useState(false);
   return (
     <View
       style={{flexDirection: 'row', alignItems: 'center', marginBottom: 30}}>

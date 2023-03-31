@@ -29,6 +29,7 @@ const BottomTab = () => {
         name="found"
         component={FoundJobs}
         options={{
+          unmountOnBlur: true,
           tabBarLabel: 'Found job',
           tabBarLabelStyle: {fontSize: 10, fontFamily: 'arial'},
           tabBarIcon: ({color, size}) => (
@@ -40,6 +41,7 @@ const BottomTab = () => {
         name="yourjobs"
         component={YourJobs}
         options={{
+          unmountOnBlur: true,
           tabBarLabel: 'Your jobs',
           tabBarIcon: ({color}) => (
             <CalenderIcon name="calendar-alt" size={27} color={color} />
@@ -50,6 +52,7 @@ const BottomTab = () => {
         name="payments"
         component={PaymentsScreen}
         options={{
+          unmountOnBlur: true,
           tabBarLabel: 'Payments',
           tabBarIcon: ({color}) => (
             <PaymentIcon name="ios-card-sharp" size={27} color={color} />
@@ -60,6 +63,7 @@ const BottomTab = () => {
         name="Settings"
         component={SettingsScreen}
         options={{
+          unmountOnBlur: true,
           tabBarLabel: 'Settings',
           tabBarLabelStyle: {color: '#000', fontSize: 10},
           tabBarIconStyle: {justifyContent: 'center', alignSelf: 'center'},

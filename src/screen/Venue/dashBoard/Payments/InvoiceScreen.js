@@ -10,7 +10,11 @@ const InvoiceScreen = ({navigation}) => {
   return (
     <SafeAreaView>
       <ScrollView>
-        <TopLogo profile={Profile} navigation={() => navigation.goBack()} />
+        <TopLogo
+          profile={Profile}
+          navigation={() => navigation.goBack()}
+          onPress={() => navigation.navigate('Venue_Settings')}
+        />
         <TopBox lable={'Payments'} />
         <View style={styles.PaymentContainer}>
           <Text style={styles.title}>Invoice Details</Text>

@@ -17,7 +17,11 @@ const PaymentScreen = ({navigation}) => {
   return (
     <SafeAreaView>
       <ScrollView>
-        <TopLogo profile={Profile} />
+        <TopLogo
+          profile={Profile}
+          navigation={() => navigation.goBack()}
+          onPress={() => navigation.navigate('Venue_Settings')}
+        />
         <TopBox lable={'Payments'} />
         <View style={styles.paymentContainer}>
           <Text style={styles.title}>Invoices</Text>

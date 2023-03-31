@@ -10,12 +10,12 @@ const YourJobsNav = () => {
   const YourJobsStack = createNativeStackNavigator();
   return (
     <YourJobsStack.Navigator screenOptions={{headerShown: false}}>
+      <YourJobsStack.Screen name="YourJobsList" component={YourJobsList} />
       <YourJobsStack.Screen name="jobPosted" component={JobPostedScreen} />
       <YourJobsStack.Screen
-        name="CheckIn-Out"
+        name="CheckInOut"
         component={CheckIn_CheckOutScreen}
       />
-      <YourJobsStack.Screen name="YourJobsList" component={YourJobsList} />
       <YourJobsStack.Screen
         name="LeaveFeedback"
         component={LeaveFeedbackScreen}
