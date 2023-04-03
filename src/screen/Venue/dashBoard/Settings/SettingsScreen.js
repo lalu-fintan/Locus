@@ -50,9 +50,7 @@ const SettingsScreen = () => {
               nonumy eirmod. Lorem ipsum dolor sit amet, consetetur. Lorem ipsum
               dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
               eirmod. Lorem ipsum dolor sit amet.{' '}
-              <TouchableOpacity style={styles.edit}>
-                <Text style={[styles.editTxt]}>Edit</Text>
-              </TouchableOpacity>
+              <Text style={[styles.editTxt]}>Edit</Text>
             </Text>
           </View>
           <View style={styles.notificationContainer}>
@@ -118,13 +116,12 @@ const styles = StyleSheet.create({
   editTxt: {
     color: '#A9A0FF',
     fontFamily: 'Magenos-Medium',
-
     fontSize: 14,
     textDecorationLine: 'underline',
   },
 
   descContainer: {
-    marginTop: 20,
+    marginTop: 32,
   },
   descTitle: {
     fontFamily: 'Magenos-Bold',
@@ -137,7 +134,8 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#000',
     textAlign: 'justify',
-    // lineHeight: 20,
+    // alignSelf: 'center',
+
     borderBottomWidth: 1,
     borderBottomColor: '#E5E5E5',
     paddingBottom: 20,

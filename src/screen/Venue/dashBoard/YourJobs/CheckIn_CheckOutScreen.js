@@ -1,25 +1,24 @@
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-// import {QRCodeScanner} from 'react-native-qrcode-scanner';
-// import {RNCamera} from 'react-native-camera';
+import QRCodeScanner from 'react-native-qrcode-scanner';
+import {RNCamera} from 'react-native-camera';
 import Profile from '../../../../assets/Images/Jpeg/venue-logo.jpg';
 import TopLogo from '../../../../components/Common/TopLogo';
 import TopBox from '../../../../components/Common/TopBox';
 
+const ScanBorder = () => {
+  return (
+    <View style={{height: '70%', width: '70%'}}>
+      <View styles={styles.bordertopleft}></View>
+      <View styles={[styles.bordertopright, {right: 0}]}></View>
+      <View styles={[styles.borderbottomleft, {bottom: 0, left: 0}]}></View>
+      <View styles={[styles.borderbottomright, {bottom: 0, right: 0}]}></View>
+    </View>
+  );
+};
 const CheckIn_CheckOutScreen = ({navigation}) => {
-  const scanBorder = () => {
-    return (
-      <View style={{height: '70%', width: '70%'}}>
-        <View styles={styles.bordertopleft}></View>
-        <View styles={[styles.bordertopright, {right: 0}]}></View>
-        <View styles={[styles.borderbottomleft, {bottom: 0, left: 0}]}></View>
-        <View styles={[styles.borderbottomright, {bottom: 0, right: 0}]}></View>
-      </View>
-    );
-  };
-
   const onSuccess = () => {
-    // navigation.navigate('YourJobsList');
+    navigation.navigate('LeaveFeedback');
   };
   return (
     <SafeAreaView style={{flex: 1}}>
@@ -29,13 +28,13 @@ const CheckIn_CheckOutScreen = ({navigation}) => {
         onPress={() => navigation.navigate('Venue_Settings')}
       />
       <TopBox lable={'CHECK-IN/OUT'} />
-      {/* <QRCodeScanner
+      <QRCodeScanner
         onRead={onSuccess}
         reacitve={true}
-        flashMode={RNCamera.Constants.FlashMode.torch}
-        customMarker={scanBorder}
+        flashMode={RNCamera.Constants.FlashMode.auto}
+        // customMarker={ScanBorder}
         showMarker={true}
-      /> */}
+      />
     </SafeAreaView>
   );
 };

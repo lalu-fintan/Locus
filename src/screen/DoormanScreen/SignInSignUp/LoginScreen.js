@@ -5,7 +5,17 @@ import TopBox from '../../../components/Common/TopBox';
 import Button from '../../../components/Common/Button';
 import InputField from '../../../components/Common/InputField';
 
-const LoginScreen = ({navigation}) => {
+const LoginScreen = ({navigation, route}) => {
+  // const {Main} = route.params;
+  // console.log(Main, 'login');
+  // const onNavigate = () => {
+  //   if (Nav == 'doorman') {
+  //     navigation.navigate('intro');
+  //   }
+  //   if (Nav == 'venue') {
+  //     navigation.navigate('CreateAccount');
+  //   }
+  // };
   return (
     <SafeAreaView>
       <ScrollView>

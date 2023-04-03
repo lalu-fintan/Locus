@@ -104,8 +104,9 @@ const FormScreen = ({navigation, route}) => {
     if (validate) {
       if (Main === 'doorman') {
         navigation.navigate('steps');
-      } else {
-        navigation.navigate('paid');
+      }
+      if (Main == 'venue') {
+        navigation.navigate('venue');
       }
       setName('');
       setPostCode('');

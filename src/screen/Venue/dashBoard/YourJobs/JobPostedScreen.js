@@ -79,8 +79,8 @@ const JobPostedScreen = ({navigation, route}) => {
             </TouchableOpacity>
             <TouchableOpacity
               style={styles.CheckBtn1}
-              onPress={() => navigation.navigate('LeaveFeedback')}>
-              <TimeIcon name="time" size={18} color={'#fff'} />
+              onPress={() => navigation.navigate('CheckInOut')}>
+              <TimeIcon name="time-outline" size={18} color={'#fff'} />
               <Text style={styles.checkBtnTxt1}>STAFF CHECK-IN/OUT</Text>
             </TouchableOpacity>
           </View>
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: 211,
-    height: 182,
+    height: 181,
     justifyContent: 'center',
     alignSelf: 'center',
     marginLeft: 14,
@@ -110,6 +110,8 @@ const styles = StyleSheet.create({
   editbtn: {
     marginLeft: 27,
     marginTop: 18,
+    // backgroundColor: 'red',
+    height: 20,
   },
   edittxt: {
     fontFamily: 'Magenos-Bold',

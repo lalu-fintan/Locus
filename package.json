@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.5.7",
+    "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
+    "deprecated-react-native-prop-types": "^4.0.0",
     "link": "^1.5.1",
     "react": "18.1.0",
     "react-native": "^0.70.7",
@@ -42,5 +44,13 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "resolutions": {
+    "react-native-permissions": "^3.8.0"
+  },
+  "overrides": {
+    "react-native-qrcode-scanner": {
+      "react-native-permissions": "^3.8.0"
+    }
   }
 }

@@ -22,7 +22,7 @@ export const EventDataList = [
     location: 'The Venue, Manchester',
     eventTime: 'Sat 15th Aug at 8pm',
     timeTo: ' 8pm to 11pm',
-    distance: '10 km',
+    distance: '1 km',
     remainingTime: '7 hr',
     Amount: '£200',
     status: 'active',

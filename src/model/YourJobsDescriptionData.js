@@ -24,7 +24,7 @@ export const ActiveList = [
     location: 'The Venue, Manchester',
     eventTime: 'Sat 15th Aug at 8pm',
     eventDate: 'Sat 15th Aug',
-    distance: '10 km',
+    distance: '1 km',
     remainingTime: '7 hr',
     Amount: '£200',
     status: 'active',

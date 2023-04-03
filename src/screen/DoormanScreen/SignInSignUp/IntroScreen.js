@@ -30,7 +30,7 @@ const IntroScreen = ({navigation}) => {
           <TouchableOpacity
             activeOpacity={0.8}
             style={styles.btnContent}
-            onPress={() => navigation.navigate('venue')}>
+            onPress={() => navigation.navigate('form', {Main: 'venue'})}>
             <Venue width={158} height={158} />
             <Text style={styles.txt}>Venue</Text>
           </TouchableOpacity>
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   content: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginVertical: 20,
+    marginVertical: 40,
   },
   btnContent: {
     alignItems: 'center',

@@ -5,11 +5,13 @@ import CreateOnAccount from '../../../screen/Venue/SignInSignUp/CreateOnAccount'
 import Address from '../../../screen/Venue/SignInSignUp/AddressScreen';
 import Brand from '../../../screen/Venue/SignInSignUp/BrandScreen';
 import Venue_bottom from '../VenueDashboard/Venue_bottom';
+import FormScreen from '../../../screen/DoormanScreen/SignInSignUp/FormScreen';
 
 export default function VenueMainStack() {
   const VenueStack = createNativeStackNavigator();
   return (
     <VenueStack.Navigator screenOptions={{headerShow: false}}>
+      {/* <VenueStack.Screen name="venueform" component={FormScreen} /> */}
       <VenueStack.Screen
         name="CreateAccount"
         component={CreateOnAccount}

@@ -52,6 +52,6 @@ export default StepsScreen;
 
 const styles = StyleSheet.create({
   boxContainer: {
-    marginVertical: 50,
+    marginVertical: 70,
   },
 });

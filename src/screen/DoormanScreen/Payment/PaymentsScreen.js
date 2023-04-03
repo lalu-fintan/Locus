@@ -119,6 +119,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Magenos-Medium',
     fontSize: 14,
     color: '#000',
+    textAlign: 'center',
   },
   TopLinktxt: {
     color: '#A9A0FF',

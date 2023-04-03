@@ -44,6 +44,6 @@ export default Venue_StepsScreen;
 
 const styles = StyleSheet.create({
   boxContainer: {
-    marginVertical: 50,
+    marginVertical: 70,
   },
 });

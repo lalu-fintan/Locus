@@ -88,7 +88,9 @@ const styles = StyleSheet.create({
     borderTopColor: '#C9C9C9',
     alignItems: 'center',
     flexDirection: 'row',
+    justifyContent: 'space-between',
     marginTop: 5,
+    width: '73.1%',
   },
   timeTxt: {
     marginLeft: 3,
@@ -98,18 +100,18 @@ const styles = StyleSheet.create({
     marginLeft: 14,
   },
   ViewBtn: {
-    backgroundColor: '#C5C5C5',
+    backgroundColor: '#E5E5E5',
     width: 102,
     height: 31.5,
     alignItems: 'center',
-    justifyContent: 'center',
     borderBottomRightRadius: 5,
-    marginLeft: 29,
   },
   ViewTxt: {
     fontFamily: 'Magenos-Bold',
+
     fontSize: 13,
     textAlign: 'center',
+    marginTop: 8,
   },
   Img: {
     width: 120,

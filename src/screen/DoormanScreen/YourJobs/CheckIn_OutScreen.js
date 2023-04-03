@@ -79,11 +79,11 @@ const styles = StyleSheet.create({
     marginBottom: 65,
   },
   bottomContainer: {
-    backgroundColor: '#C9C9C9',
+    backgroundColor: '#E5E5E5',
     height: 100,
     justifyContent: 'center',
     paddingHorizontal: 80,
-    marginTop: 50,
+    marginTop: 60,
   },
   timeTxt: {
     fontFamily: 'Magenos-Bold',

@@ -39,7 +39,7 @@ export default BrandScreen;
 
 const styles = StyleSheet.create({
   brandContainer: {
-    marginVertical: 50,
+    marginVertical: 45,
     marginHorizontal: 30,
   },
   uploadTack: {

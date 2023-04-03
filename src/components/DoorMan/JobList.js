@@ -2,7 +2,6 @@ import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 import React from 'react';
 import Location from 'react-native-vector-icons/Ionicons';
 import TimeIcon from 'react-native-vector-icons/Ionicons';
-import Coin from '../../assets/Images/Png/coin.png';
 import Coins from 'react-native-vector-icons/FontAwesome5';
 import Cancle from 'react-native-vector-icons/AntDesign';
 import Tick from 'react-native-vector-icons/Feather';
@@ -55,7 +54,7 @@ const JobList = ({
                       ? '#4FC762'
                       : status == 'Paid'
                       ? '#4FC762'
-                      : '#C5C5C5',
+                      : '#E5E5E5',
                 },
               ]}>
               {Compeleted && (
