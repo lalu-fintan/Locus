@@ -21,12 +21,17 @@ const FormScreen = ({navigation, route}) => {
   const {Main} = route.params;
 
   console.log('fdfdf', Main);
+  const nameRegex =
+    "^([a-zA-Z]{2,}s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}s?([a-zA-Z]{1,})?)";
+  const specialcharcter = '[^<>] (or ^.*[^<>].*$)';
 
   const nameValue = value => {
     if (!value) {
       setValidName('Enter the name');
     } else if (value.length < 5) {
       setValidName('minimum 5 letters');
+    } else if (!value.match(nameRegex)) {
+      setValidName('the name should be capital,small and number');
     } else {
       setValidName('');
     }
@@ -48,7 +53,7 @@ const FormScreen = ({navigation, route}) => {
     if (!value) {
       setValidAddress('Enter the Address');
     } else if (value.length <= 20) {
-      setValidAddress('Address length 10');
+      setValidAddress('Address length 20');
     } else {
       setValidAddress('');
       return;
@@ -67,11 +72,13 @@ const FormScreen = ({navigation, route}) => {
     setEmail(value);
   };
   const numberValue = value => {
+    // const phoneNumberRegex = '/^+?[1-9][0-9]{7,14}$/;';
     if (!value) {
       setValidPhone('enter the Phone number');
     } else if (value.length <= 11) {
       setValidPhone('enter the valid Phone Number');
-      // return value;
+      // } else if (value.match(phoneNumberRegex)) {
+      //   setValidPhone('enter the valid number');
     } else {
       setValidPhone('');
       return;

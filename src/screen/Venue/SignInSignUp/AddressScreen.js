@@ -6,7 +6,13 @@ import InputField from '../../../components/Common/InputField';
 import Button from '../../../components/Common/Button';
 import Footer from '../../../components/Common/Footer';
 
-const AddressScreen = ({navigation}) => {
+const AddressScreen = ({navigation, route}) => {
+  const {callBack} = route.params;
+  console.log(callBack);
+  function nextHandler() {
+    navigation.goBack();
+    callBack();
+  }
   return (
     <SafeAreaView>
       <ScrollView>
@@ -17,10 +23,7 @@ const AddressScreen = ({navigation}) => {
           <InputField lable={'Address'} placeholder={'Address'} />
           <InputField lable={'Address line 2'} placeholder={'Address'} />
           <InputField lable={'Town or City'} placeholder={'Address'} />
-          <Button
-            lable={'Next'}
-            onPress={() => navigation.navigate('CreateAccount')}
-          />
+          <Button lable={'Next'} onPress={nextHandler} />
         </View>
         <Footer navigation={() => navigation.navigate('login')} />
       </ScrollView>

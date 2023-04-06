@@ -13,7 +13,13 @@ import Button from '../../../components/Common/Button';
 import Footer from '../../../components/Common/Footer';
 import VenueSvg from '../../../assets/Images/Svg/VenuePic.svg';
 
-const BrandScreen = ({navigation}) => {
+const BrandScreen = ({navigation, route}) => {
+  const {callBack} = route.params;
+  console.log(callBack);
+  function nextHandler() {
+    navigation.navigate('VenueBottom');
+    callBack();
+  }
   return (
     <SafeAreaView>
       <ScrollView>
@@ -24,10 +30,7 @@ const BrandScreen = ({navigation}) => {
             <VenueSvg style={styles.venueSvg} />
             <Text style={styles.uploadTxt}>Upload a logo or Venue photo</Text>
           </TouchableOpacity>
-          <Button
-            lable={'Finish'}
-            onPress={() => navigation.navigate('VenueBottom')}
-          />
+          <Button lable={'Finish'} onPress={nextHandler} />
         </View>
         <Footer navigation={() => navigation.navigate('login')} />
       </ScrollView>

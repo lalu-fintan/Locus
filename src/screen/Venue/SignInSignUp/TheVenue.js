@@ -6,7 +6,13 @@ import InputField from '../../../components/Common/InputField';
 import Button from '../../../components/Common/Button';
 import Footer from '../../../components/Common/Footer';
 
-const TheVenue = ({navigation}) => {
+const TheVenue = ({navigation, route}) => {
+  const {callBack} = route.params;
+  console.log(callBack);
+  function nextHandler() {
+    navigation.goBack();
+    callBack();
+  }
   return (
     <SafeAreaView>
       <ScrollView>
@@ -17,10 +23,7 @@ const TheVenue = ({navigation}) => {
           <InputField lable={'Registration Number'} placeholder={'Number'} />
           <InputField lable={'Email'} placeholder={'Email'} />
           <InputField lable={'Phone Number'} placeholder={'+44'} />
-          <Button
-            lable={'Next'}
-            onPress={() => navigation.navigate('CreateAccount')}
-          />
+          <Button lable={'Next'} onPress={nextHandler} />
         </View>
         <Footer navigation={() => navigation.navigate('login')} />
       </ScrollView>

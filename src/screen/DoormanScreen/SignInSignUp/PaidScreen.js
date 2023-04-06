@@ -10,7 +10,13 @@ import Button from '../../../components/Common/Button';
 import InputField from '../../../components/Common/InputField';
 import AccountInput from '../../../components/Common/AccountInput';
 
-const PaidScreen = ({navigation}) => {
+const PaidScreen = ({navigation, route}) => {
+  const {callBack} = route.params;
+  console.log(callBack);
+  function nextHandler() {
+    navigation.goBack();
+    callBack();
+  }
   return (
     <SafeAreaView>
       <ScrollView>
@@ -38,7 +44,7 @@ const PaidScreen = ({navigation}) => {
               />
               <AccountInput lable={'Sort Code'} placeholder={'Sort code'} />
             </View>
-            <Button lable="Next" onPress={() => navigation.navigate('steps')} />
+            <Button lable="Next" onPress={nextHandler} />
           </View>
         </View>
         <Footer navigation={() => navigation.navigate('login')} />

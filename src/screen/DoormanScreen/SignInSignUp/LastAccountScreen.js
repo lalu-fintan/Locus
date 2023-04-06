@@ -3,6 +3,7 @@ import React from 'react';
 import TopLogo from '../../../components/Common/TopLogo';
 import TopBox from '../../../components/Common/TopBox';
 import SVGLogo from '../../../assets/Images/Svg/Clapping.svg';
+import Button from '../../../components/Common/Button';
 
 const LastAccountScreen = ({navigation}) => {
   setTimeout(() => {
@@ -23,6 +24,7 @@ const LastAccountScreen = ({navigation}) => {
             We’ll organize a 15 min video call with you {''} to make sure you
             are who you say you are!
           </Text>
+          {/* <Button lable={''}/> */}
         </View>
       </ScrollView>
     </SafeAreaView>

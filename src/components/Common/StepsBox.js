@@ -2,15 +2,24 @@ import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import QuestionMark from '../../assets/Images/Svg/QuestionMark.svg';
 
-const StepsBox = ({Steps, title, navigation, current, help}) => {
+const StepsBox = ({Steps, title, callBack, disable, completed, help}) => {
   return (
     <TouchableOpacity
-      style={[styles.boxContainer, !current && {opacity: 0.5}]}
+      disabled={disable}
+      style={[
+        styles.boxContainer,
+        disable && styles.disableContainer,
+        completed && styles.completedContainer,
+      ]}
       activeOpacity={0.5}
-      onPress={navigation}>
+      onPress={callBack}>
       <View>
-        <Text style={styles.topTxt}>{Steps}</Text>
-        <Text style={styles.title}>{title}</Text>
+        <Text style={[styles.topTxt, {color: completed && '#BEB7FF'}]}>
+          {Steps}
+        </Text>
+        <Text style={[styles.title, {color: completed && '#A9A0FF'}]}>
+          {title}
+        </Text>
       </View>
       {help && <QuestionMark width={50} height={25} style={styles.icon} />}
     </TouchableOpacity>
@@ -43,5 +52,14 @@ const styles = StyleSheet.create({
   },
   icon: {
     alignSelf: 'center',
+  },
+  disableContainer: {
+    backgroundColor: '##F4F4F4',
+    opacity: 0.5,
+  },
+  completedContainer: {
+    backgroundColor: '#EAE8FF',
+    opacity: 0.8,
+    borderWidth: 0.5,
   },
 });

@@ -18,7 +18,13 @@ import AccountInput from '../../../components/Common/AccountInput';
 import TimeInput from '../../../components/Common/TimeInput';
 import RadioButtons from '../../../components/Common/RadioButton';
 
-const BackgroundCheckScreen = ({navigation}) => {
+const BackgroundCheckScreen = ({navigation, route}) => {
+  const {callBack} = route.params;
+  console.log(callBack);
+  function nextHandler() {
+    navigation.navigate('FinalScreen');
+    callBack();
+  }
   return (
     <SafeAreaView>
       <ScrollView>
@@ -111,10 +117,7 @@ const BackgroundCheckScreen = ({navigation}) => {
           </View>
           <RadioButtons lable={'Have you ever declared bankruptcy?'} />
 
-          <Button
-            lable={'Next'}
-            onPress={() => navigation.navigate('FinalScreen')}
-          />
+          <Button lable={'Next'} onPress={nextHandler} />
         </View>
         <Footer navigation={() => navigation.navigate('login')} />
       </ScrollView>

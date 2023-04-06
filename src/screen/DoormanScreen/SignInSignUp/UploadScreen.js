@@ -8,7 +8,13 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Button from '../../../components/Common/Button';
 import InputField from '../../../components/Common/InputField';
 
-const UploadScreen = ({navigation}) => {
+const UploadScreen = ({navigation, route}) => {
+  const {callBack} = route.params;
+  console.log(callBack);
+  function nextHandler() {
+    navigation.goBack();
+    callBack();
+  }
   return (
     <SafeAreaView>
       <ScrollView>
@@ -53,7 +59,7 @@ const UploadScreen = ({navigation}) => {
             placeholder="SIA Number"
             required
           />
-          <Button lable="Next" onPress={() => navigation.navigate('steps')} />
+          <Button lable="Next" onPress={nextHandler} />
         </View>
 
         <Footer navigation={() => navigation.navigate('login')} />
