@@ -6,9 +6,9 @@ import SVGLogo from '../../../assets/Images/Svg/Clapping.svg';
 import Button from '../../../components/Common/Button';
 
 const LastAccountScreen = ({navigation}) => {
-  setTimeout(() => {
-    navigation.navigate('dashboard');
-  }, 1000);
+  // setTimeout(() => {
+  //   navigation.navigate('dashboard');
+  // }, 1000);
   return (
     <SafeAreaView>
       <ScrollView>
@@ -24,7 +24,12 @@ const LastAccountScreen = ({navigation}) => {
             We’ll organize a 15 min video call with you {''} to make sure you
             are who you say you are!
           </Text>
-          {/* <Button lable={''}/> */}
+        </View>
+        <View style={{marginHorizontal: 30}}>
+          <Button
+            lable={'Find your jobs'}
+            onPress={() => navigation.navigate('dashboard')}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>

@@ -1,5 +1,5 @@
 import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import TopLogo from '../../../components/Common/TopLogo';
 import TopBox from '../../../components/Common/TopBox';
 import Footer from '../../../components/Common/Footer';
@@ -7,14 +7,64 @@ import Upload from '../../../assets/Images/Svg/Upload.svg';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Button from '../../../components/Common/Button';
 import InputField from '../../../components/Common/InputField';
+import DocumentPickerOptions from 'react-native-document-picker';
 
 const UploadScreen = ({navigation, route}) => {
   const {callBack} = route.params;
-  console.log(callBack);
+
+  const [fileName, setFileName] = useState('');
+  const [fileError, setFileError] = useState('');
+  console.log(fileName);
+
+  const selectDoc = async () => {
+    try {
+      const doc = await DocumentPickerOptions.pickSingle({
+        type: [
+          DocumentPickerOptions.types.pdf,
+          DocumentPickerOptions.types.doc,
+          DocumentPickerOptions.types.images,
+        ],
+      });
+      setFileName(doc.name);
+    } catch (err) {
+      if (DocumentPickerOptions.isCancle(err)) {
+        console.log('user cancel the the upload', err);
+      } else {
+        console.log(err);
+      }
+    }
+  };
+  // console.log(selectDoc());
   function nextHandler() {
-    navigation.goBack();
-    callBack();
+    let Validation = true;
+    if (!SIANum) {
+      setValidNum('SIA Number field required');
+      Validation = false;
+    }
+    if (!fileName) {
+      setFileError('document required');
+      Validation = false;
+    }
+
+    if (Validation) {
+      navigation.goBack();
+      callBack();
+    }
   }
+  const [SIANum, setSIANum] = useState('');
+  const [validNum, setValidNum] = useState('');
+
+  const numberValidation = value => {
+    if (!value) {
+      setValidNum('SIA number is required');
+    } else if (value.length < 3) {
+      setValidNum('minimum 3 charecters');
+    } else {
+      setValidNum('');
+      // return;
+    }
+    setSIANum(value);
+  };
   return (
     <SafeAreaView>
       <ScrollView>
@@ -53,11 +103,32 @@ const UploadScreen = ({navigation, route}) => {
               </Text>
             </View>
           </View>
-          <Button lable="Upload a Valid document" icon="upload" />
+          <Button
+            lable={fileName ? fileName : 'Upload a Valid document'}
+            icon={fileName ? '' : 'upload'}
+            onPress={selectDoc}
+          />
+          {!fileName && (
+            <Text
+              style={{
+                color: 'red',
+                fontFamily: 'Magenos-Medium',
+                marginTop: 1,
+                fontSize: 16,
+                marginBottom: 10,
+              }}>
+              {fileError}
+            </Text>
+          )}
+
           <InputField
             lable="SIA Badge Number"
             placeholder="SIA Number"
             required
+            Number
+            value={SIANum}
+            onChangeText={numberValidation}
+            error={validNum}
           />
           <Button lable="Next" onPress={nextHandler} />
         </View>

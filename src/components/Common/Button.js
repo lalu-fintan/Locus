@@ -9,7 +9,9 @@ const Button = ({onPress, lable, icon}) => {
       activeOpacity={0.8}
       onPress={onPress}>
       {icon && <AntDesign name={icon} size={24} color="#fff" />}
-      <Text style={styles.btnTxt}>{lable}</Text>
+      <Text style={[styles.btnTxt, {width: 260}]} numberOfLines={1}>
+        {lable}
+      </Text>
     </TouchableOpacity>
   );
 };
@@ -18,13 +20,15 @@ export default Button;
 
 const styles = StyleSheet.create({
   btnContainer: {
+    flex: 1,
     backgroundColor: '#A9A0FF',
     height: 44,
     borderRadius: 5,
-    marginVertical: 20,
+    marginTop: 20,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: 6,
   },
 
   btnTxt: {

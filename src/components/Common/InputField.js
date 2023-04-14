@@ -6,10 +6,12 @@ const InputField = ({
   lable,
   placeholder,
   error,
+  index,
+  type,
   password,
   onChangeText,
   value,
-  PhoneNumber,
+  Number,
   onFoucus,
   required,
   icon,
@@ -34,12 +36,12 @@ const InputField = ({
         {icon && <Icon name={icon} size={16} color={'#CCCCCC'} />}
         <TextInput
           secureTextEntry={password}
-          keyboardType={PhoneNumber && 'number-pad'}
+          keyboardType={Number && 'number-pad'}
           placeholder={placeholder}
           placeholderTextColor={'#CCCCCC'}
           style={styles.input}
           value={value}
-          onChangeText={text => onChangeText(text)}
+          onChangeText={text => onChangeText(text, index, type)}
           onFoucus={() => {
             setInFoucs(true);
           }}

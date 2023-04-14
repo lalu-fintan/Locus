@@ -11,6 +11,8 @@ const TimeInput = ({
   PhoneNumber,
   onFoucus,
   required,
+  type,
+  index,
 }) => {
   return (
     <View style={styles.main}>
@@ -30,7 +32,7 @@ const TimeInput = ({
           placeholderTextColor="#808080"
           style={styles.input}
           value={value}
-          onChangeText={text => onChangeText(text)}
+          onChangeText={text => onChangeText(text, index, type)}
           onFoucus={() => {
             setInFoucs(true);
           }}

@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     borderBottomColor: '#E5E5E5',
     paddingBottom: 2,
     marginTop: 31,
+    marginBottom: 10,
   },
   lableTxt: {
     color: '#A9A0FF',

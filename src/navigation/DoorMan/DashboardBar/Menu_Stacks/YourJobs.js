@@ -10,8 +10,8 @@ const YourJobs = () => {
   return (
     <>
       <YourJobsStack.Navigator screenOptions={{headerShown: false}}>
-        <YourJobsStack.Screen name="avilableList" component={YourJobsScreen} />
         <YourJobsStack.Screen name="jobList" component={YourJobScreen} />
+        <YourJobsStack.Screen name="avilableList" component={YourJobsScreen} />
         <YourJobsStack.Screen
           name="jobdescription"
           component={YourJobs_JobDescripionScreen}

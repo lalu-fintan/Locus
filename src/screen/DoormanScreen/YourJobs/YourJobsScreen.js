@@ -22,7 +22,7 @@ const YourJobsScreen = ({navigation}) => {
         />
         <View
           style={{
-            marginTop: 50,
+            marginTop: 80,
           }}>
           <View style={styles.Body}>
             <SVGLogo

@@ -2,9 +2,11 @@ import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-const AddButton = ({width, lable}) => {
+const AddButton = ({width, lable, onPress}) => {
   return (
-    <TouchableOpacity style={[styles.btnContainer, {width: width}]}>
+    <TouchableOpacity
+      style={[styles.btnContainer, {width: width}]}
+      onPress={onPress}>
       <Entypo name="plus" size={16} color={'#A9A0FF'} />
       <Text style={styles.content}>{lable}</Text>
     </TouchableOpacity>

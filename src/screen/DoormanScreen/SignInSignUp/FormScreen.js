@@ -139,7 +139,7 @@ const FormScreen = ({navigation, route}) => {
           <InputField
             lable="Postcode"
             placeholder="Postcode"
-            PhoneNumber
+            Number
             value={postCode}
             onChangeText={postValue}
             error={validCode}
@@ -162,7 +162,7 @@ const FormScreen = ({navigation, route}) => {
             lable="Phone Number"
             placeholder="+44"
             value={phoneNumber}
-            PhoneNumber
+            Number
             onChangeText={numberValue}
             error={validPhone}
           />
