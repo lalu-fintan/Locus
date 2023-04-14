@@ -1,7 +1,13 @@
-import {StyleSheet, Text, TextInput, View} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React, {useState} from 'react';
+import Icons from 'react-native-vector-icons/Ionicons';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-
 const InputField = ({
   lable,
   placeholder,
@@ -15,6 +21,8 @@ const InputField = ({
   onFoucus,
   required,
   icon,
+  lockIconName,
+  shownPassword,
 }) => {
   const [isFocus, setInFoucs] = useState(false);
   return (
@@ -46,6 +54,11 @@ const InputField = ({
             setInFoucs(true);
           }}
         />
+        {lockIconName && (
+          <TouchableOpacity onPress={shownPassword}>
+            <Icons name={lockIconName} size={20} color={'#A9A0FF'} />
+          </TouchableOpacity>
+        )}
       </View>
       {error && <Text style={styles.error}>{error}</Text>}
     </View>
@@ -81,8 +94,7 @@ const styles = StyleSheet.create({
     color: '#000',
     fontSize: 16,
     marginTop: 4,
-
-    width: '100%',
+    width: '90%',
   },
   error: {
     color: 'red',
