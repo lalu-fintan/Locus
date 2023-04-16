@@ -23,14 +23,16 @@ const IntroScreen = ({navigation}) => {
           <TouchableOpacity
             activeOpacity={0.8}
             style={styles.btnContent}
-            onPress={() => navigation.navigate('form', {Main: 'doorman'})}>
+            onPress={() => navigation.navigate('form')}>
+            {/* 'form', {Main: 'doorman'}) */}
             <Doorman width={158} height={158} />
             <Text style={styles.txt}>Door Supervisor</Text>
           </TouchableOpacity>
           <TouchableOpacity
             activeOpacity={0.8}
             style={styles.btnContent}
-            onPress={() => navigation.navigate('form', {Main: 'venue'})}>
+            onPress={() => navigation.navigate('venue')}>
+            {/* 'form', {Main: 'venue'}  */}
             <Venue width={158} height={158} />
             <Text style={styles.txt}>Venue</Text>
           </TouchableOpacity>

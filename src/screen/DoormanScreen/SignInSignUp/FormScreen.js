@@ -1,12 +1,14 @@
 import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import TopLogo from '../../../components/Common/TopLogo';
 import TopBox from '../../../components/Common/TopBox';
 import Footer from '../../../components/Common/Footer';
 import Button from '../../../components/Common/Button';
 import InputField from '../../../components/Common/InputField';
+import {AuthContext} from '../../../context/AuthContext';
 
 const FormScreen = ({navigation, route}) => {
+  const val = useContext(AuthContext);
   const [name, setName] = useState('');
   const [postCode, setPostCode] = useState('');
   const [address, setAddress] = useState('');
@@ -22,9 +24,9 @@ const FormScreen = ({navigation, route}) => {
 
   const [passwordVisible, setPassWordVisible] = useState(true);
 
-  const {Main} = route.params;
+  // const {Main} = route.params;
 
-  console.log('fdfdf', Main);
+  // console.log('fdfdf', Main);
   const nameRegex =
     "^([a-zA-Z]{2,}s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}s?([a-zA-Z]{1,})?)";
   const specialcharcter = '[^<>] (or ^.*[^<>].*$)';
@@ -122,17 +124,18 @@ const FormScreen = ({navigation, route}) => {
       setValidPhone('Enter the Phone Number');
       validate = false;
     }
-    if (!password) {
+    if (!passwords) {
       setValidPassword('password is required');
       validate = false;
     }
     if (validate) {
-      if (Main === 'doorman') {
-        navigation.navigate('steps');
-      }
-      if (Main == 'venue') {
-        navigation.navigate('venue');
-      }
+      // if (Main === 'doorman') {
+      //   navigation.navigate('steps');
+      // }
+      // if (Main == 'venue') {
+      //   navigation.navigate('venue');
+      // }
+      navigation.navigate('steps');
       setName('');
       setPostCode('');
       setAddress('');
@@ -195,6 +198,7 @@ const FormScreen = ({navigation, route}) => {
             onChangeText={numberValue}
             error={validPhone}
           />
+
           <Button onPress={Validation} lable="Next" />
         </View>
         <Footer navigation={() => navigation.navigate('login')} />
